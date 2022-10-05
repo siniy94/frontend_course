@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
 }
 *, *::before, *::after{
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 }
 html body {
   height: 100%
+
 }
 
 a{
@@ -33,7 +34,6 @@ a{
   flex: 1;
 }
 
-/*----header---*/
 .header{
   background: #F8F6F7 url('/images/header-bg.png');
   overflow: hidden;
@@ -48,7 +48,6 @@ a{
   max-width: 540px;
   position: relative;
   z-index: 2;
-
 }
 
 .header-top {
@@ -102,9 +101,22 @@ a{
   font-size: 11px;
   color: #333333;
 }
-.hero {
+.hero h1 {
   max-width: 540px;
-  font-weight: 48px;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  color: #333333;
+
+}
+
+.hero p {
+  font-style: normal;
+  margin-top: 17px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 20px;
   color: #333333;
 }
 
@@ -153,10 +165,6 @@ a{
   bottom: -110px;
 }
 
-.section {
-  margin: 50px;
-}
-
 .section-header {
   display: flex;
   justify-content:space-between;
@@ -170,7 +178,8 @@ a{
 
 .btn {
   display: inline-block;
-  padding: 0, 60px;
+  margin-top: 59px;
+  padding: 0, 59px;
   font-weight: 500;
   font-size: 14px;
   height: 48px;
@@ -181,28 +190,22 @@ a{
   border: solid #FB9475;
 }
 
-.section .container {
-  position: relative;
-  padding: 30px 0 130px;
-}
-
 .section-title {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
 }
 
-.section_blok {
+.section-blok {
   display: flex;
   justify-content: space-between;
 }
 
 .section-text1 {
-font-weight: 400;
-font-size: 20px;
-max-width: 570px;
-line-height: 32px;
-position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 570px;
+  line-height: 32px;
 }
 
 .section-text2 {
@@ -210,10 +213,124 @@ position: relative;
   font-size: 16px;
   max-width: 540px;
   line-height: 26px;
-  position: relative;
   }
 
 .section-video {
-  width: 445px;
-  height: 297px;
+  position: relative;
+  width: 40%;
   }
+
+.section-video img {
+  height: auto;
+  right: 0;
+  }
+
+.section-button {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  right: 32%;
+  top: 47%;
+  transform: translate(-50%,-50%);
+  padding: 0px;
+ }
+
+ .button-text {
+  position: absolute;
+  right: 3%;
+  top: 62%;
+  transform: translate(-50%,-50%);
+  }
+
+
+ .button-text h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  }
+
+
+.section-blok2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  }
+
+.section-b1, .section-b2, .section-b3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-b1 img, .section-b2 img, .section-b3 img {
+  height: 48px;
+}
+
+.section-b1 h5, .section-b2 h5, .section-b3 h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.section-b1 h6, .section-b2 h6, .section-b3 h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  max-width: 296px;
+}
+
+.footer {
+  left: 0px;
+  bottom: 0px;
+ }
+
+ .header, .footer {
+  flex-shrink: 0;
+ }
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.company-info h6 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 8;
+  color: #333333;
+}
+
+.company-info span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #278AFF;
+  
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+ }
+
+.navigation li:not(:last-child){
+  margin-right: 28px;
+}
+
+.navigation a{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}
