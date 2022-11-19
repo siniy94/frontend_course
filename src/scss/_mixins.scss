@@ -1,0 +1,21 @@
+@mixin IsMobile {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin IsTablet {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin IsMediumDesktop {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+// @include hover {
+//     border-width: 2px;
+//   }
