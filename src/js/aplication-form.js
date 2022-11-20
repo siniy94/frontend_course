@@ -1,7 +1,7 @@
 $(window).on('load', function() {
     console.log('aplication');
 
-    const formEl = document.forms.appointment;
+    const formEl = document.forms.aplication;
 
     formEl.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -11,7 +11,7 @@ $(window).on('load', function() {
 
         if (!nameInput.value && !phoneInput.value)
         {
-            alert('Для записи необходимо ввести ваше имя и номер телефона');
+            alert('Поля с Вашем именем и номером телефона не заполнены');
             return;
         }
 

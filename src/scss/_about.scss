@@ -1,9 +1,23 @@
 .about {
+  display: flex;
+  justify-content: space-between;
+  gap: 94px;
+
+  @include IsMediumDesktop {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+  }
+  
     &__title {
     font-weight: 400;
     font-size: 20px;
     max-width: 570px;
     line-height: 32px;
+
+    @include IsTablet {
+      text-align: justify;
+  }
   }
 
   &__subtitle {
@@ -11,6 +25,10 @@
     font-size: 16px;
     max-width: 540px;
     line-height: 26px;
+
+    @include IsTablet {
+      text-align: justify;
+  }
     }
   
   &__video-container {
@@ -28,6 +46,14 @@
       right: 0;
       bottom: 0;
       top: 0;
+
+      @include IsTablet {
+        padding: 44% 0 0 0;
+    }
+
+      @include IsMobile {
+        padding: 48% 0 0 0;
+    }
     }
   
     &::after {
@@ -41,6 +67,14 @@
       top: 50%;
       left: 50%;transform: translate(-50%, -50%);
       background: url('../images/batton.png') no-repeat center top;
+
+      @include IsTablet {
+        top: 70px;
+    }
+
+      @include IsMobile {
+        top: 65px;
+    }
   
     }
   
@@ -49,6 +83,16 @@
       height: 100%;
       object-fit: cover;
       display: block;
+
+      @include IsTablet {
+        min-width: 350px;
+        height: 220px;
+    }
+
+    @include IsMobile {
+        min-width: 300px;
+        height: 200px;
+    }
     }
     }
 }

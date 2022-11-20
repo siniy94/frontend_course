@@ -8,8 +8,8 @@ $(window).on('load', function() {
         slidesToShow: 4,
         slidesToScroll: 4,
         centerMode: true,
-        prevArrow: $('.button-left'),
-        nextArrow: $('.button-right'),
+        prevArrow: $('.works__button--left'),
+        nextArrow: $('.works__button--right'),
         responsive: [
             {
                 breakpoint: 1024,

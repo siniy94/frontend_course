@@ -364,7 +364,7 @@
   border-radius: 17px;
 }
 
-.button-left {
+.works__button--left {
   display: inline-block;
   height: 14px;
   border: none; 
@@ -380,7 +380,7 @@
   border-radius: 20px;
 }
 
-.button-right {
+.works__button--right {
   display: inline-block;
   border: none; 
   outline: none;
@@ -393,13 +393,13 @@
 
 }
 
-.button-left:hover {
+.works__button--left:hover {
   background: #F8F6F7 url('/images/btn1.png');
   border-radius: 20px;
   transition: .15s color;
 }
 
-.button-right:hover {
+.works__button--right:hover {
   background: #F8F6F7 url('/images/btn2.png');
   border-radius: 20px;
   transition: .90s color;
@@ -451,6 +451,11 @@
   border-radius: 24px;
   margin-top: 20px;
   margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 
