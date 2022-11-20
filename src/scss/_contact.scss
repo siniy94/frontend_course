@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    @include IsTablet {
+      text-align: center;
+    }
+
+    &__adress {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 0;
+      }
+
+    &__phone-number {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+    &__e-mail {
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration-line: underline;
+        color: #278AFF;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+    &__social-text {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 32px;
+      }
+
+    &__social {
+        max-width: 141px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+      }
+}
+      
