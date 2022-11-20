@@ -1,0 +1,81 @@
+.navigation {
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        &--animation {
+            @include IsMediumDesktop {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: start;
+                padding: 5px 0 0 0;
+            }
+
+            @include IsTablet {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                z-index: 100;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                opacity: 0.9;
+                transform: translateY(-100%);
+                transition: transform 0.15s;
+                overflow: auto;
+            }
+        }
+    }
+
+    &__item {
+        @include IsTablet {
+            padding: 10px 20px;
+        }
+        &:not(:last-child){
+      margin-right: 28px;
+      
+      @include IsMediumDesktop {
+        margin-left: 8px;
+        margin-right: 8px;
+            }
+        }
+    }
+  
+    &__link {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333333;
+      transition: .15s color;
+      text-decoration: none;
+  
+      &:hover {
+        color: #00BF78;
+      }
+    }
+
+    &__list.visible {
+       transform: translateY(0);
+        }
+    
+    &__close-icon {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        color: #333;
+        top: 3px;
+        right: 3px;
+        visibility: collapse;
+        cursor: pointer;
+
+        @include IsTablet {
+            visibility: visible;
+        }
+    }
+}
+
+

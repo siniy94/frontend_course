@@ -1,0 +1,64 @@
+.section {
+    &__header {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      margin-bottom: 32px;
+  
+      &--margin {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+    }
+  
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      margin: 0;
+    
+      }
+      
+    &__inner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    &__features {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+    }
+    
+    &__subblok {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &--grey {
+  
+      padding: 80px 15px;
+      background-color: #F8F6F7;
+      height: 100%;
+    }
+  
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    &__contact {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &__aplication-form {
+      margin: auto;
+    }
+  }
+  

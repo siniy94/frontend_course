@@ -7,6 +7,10 @@
 @import 'contact';
 @import 'aplication-form';
 @import 'works-gallery';
+@import 'navigator-hamburger';
+@import 'navigator';
+@import 'hero';
+
 
 .wrapper{
   display: flex;
@@ -49,28 +53,6 @@
   text-decoration: none;
 }
 
-.navigation {
-  &__list {
-    display: flex;
-    list-style: none;
-  }
-
-  &__item:not(:last-child){
-    margin-right: 28px;
-  }
-
-  &__link {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333333;
-    transition: .15s color;
-
-    &:hover {
-      color: #00BF78;
-    }
-  }
-}
-
 .phone-info__link {
   display: flex;
   flex-direction: column;
@@ -107,6 +89,8 @@
   color: #333333;
 }
 
+
+
 .header__social {
   list-style: none;
   position: absolute;
@@ -115,6 +99,7 @@
   transform:translateY(-50%);
   margin-bottom: 0;
   padding: 0px;
+  
  }
 
  .social_link:not(:last-child){
@@ -128,6 +113,15 @@
   bottom: 0;
   right: 80px;
   top: 87px;
+
+  @include IsMediumDesktop {
+    opacity: 0.4;
+}
+
+@include IsTablet {
+    display: none;
+}
+
 }
 
 .header__girl:after {
@@ -533,32 +527,3 @@ color: #00BF78;
 }
 
 
-/*-------------------*/
-
-
-
-/* Large Devices, Wide Screens */ 
-@media only screen and (max-width: 1280px) { 
-} 
-/* Medium Devices, Desktops */ 
-@media only screen and (max-width: 992px) { 
-  .header__girl {
-    opacity: 0.4;
-  }
-} 
-/* Small Devices, Tablets */ 
-@media only screen and (max-width: 768px) {
-  .header__top {
-    flex-direction: column;
-  }
-
-  .header__nav .navigation__list {
-    justify-content: center;
-  }
-} 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width: 480px) { 
-} 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width: 320px) { 
-}

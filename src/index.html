@@ -5,26 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Salon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
     <div class="wrapper">
         <hedader class="header">
             <div class="container">
+                <button class="navigation-hamburger">
+                    <span class="navigation-hamburger__icon material-icons">
+                        menu
+                    </span>
+                </button>
                 <div class="header__girl"></div>
                 <div class="header__top">
                     <a href="" class="logo">Мир красоты</a>
-                    <nav class="navigation header__nav">
-                        <ul class="navigation__list">
-                            <li class="navigation__item"><a class="navigation__link" href="#">Услуги и цены</a></li>
-                            <li class="navigation__item"><a class="navigation__link" href="#">Мастера</a></li>
-                            <li class="navigation__item"><a class="navigation__link" href="#">Наши работы</a></li>
-                            <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
-                            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+                    <nav class="navigation header__navigation">
+                        <ul class="navigation__list navigation__list--animation" id="navigation-list">
+                            <button class="navigation__close-icon">
+                                <span class="material-icons">
+                                    close
+                                </span>
+                            </button>
+                            <li class="navigation__item"><a class="navigation__link" href="#prices">Услуги и цены</a>
+                            </li>
+                            <li class="navigation__item"><a class="navigation__link" href="#masters">Мастера</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#work-examples">Наши
+                                    работы</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="phone-info">
@@ -40,11 +56,11 @@
                     <button class="btn"><a href="#"></a>Записаться онлайн</button>
                 </div>
 
-               <ul class="header__social social--horisontal">
-                <li><a href="http://vk.com/" class="social__link"><img src="./images/VK.png" alt="vk"></a></li>
-                <li><a href="http://instagram.com/" class="social__link"><img src="./images/Instagram.png" alt="Insagram"></a></li>
-                <li><a href="http://youtube.com/" class="social__link"><img src="./images/Youtube.png" alt="Youtube"></a></li>
-               </ul>
+                <ul class="header__social social">
+                    <li><a href="http://vk.com/" class="social__link"><img src="./images/VK.png" alt="vk"></a></li>
+                    <li><a href="http://instagram.com/" class="social__link"><img src="./images/Instagram.png" alt="Insagram"></a></li>
+                    <li><a href="http://youtube.com/" class="social__link"><img src="./images/Youtube.png" alt="Youtube"></a></li>
+                </ul>
              
 
             </div>
@@ -288,24 +304,24 @@
                     </div>
                 </div>
                 <div class="works-gallery">
-                    <div class="works-gallary__card">
-                        <div class="works-gallery__picture">
+                    <div class="works-gallary__card responsive">
+                        <div class="works-gallery__picture"  data-fancybox data-src="./images/9634916_1920 1.png">
                             <img src="/images/9634916_1920 1.png" alt="1"><a href="#"></a></img>
                         </div>
                     </div>
-                    <div class="works-gallary__card">
-                        <div class="works-gallery__picture">
-                            <img src="/images/9634916_1920 2.png" alt="1"><a href="#"></a></img>
+                    <div class="works-gallary__card responsive">
+                        <div class="works-gallery__picture"  data-fancybox data-src="./images/9634916_1920 2.png">
+                            <img src="/images/9634916_1920 2.png" alt="2"><a href="#"></a></img>
                         </div>
                     </div>
-                    <div class="works-gallary__card">
-                        <div class="works-gallery__picture">
-                            <img src="/images/9634916_1920 3.png" alt="1"><a href="#"></a></img>
+                    <div class="works-gallary__card responsive">
+                        <div class="works-gallery__picture"  data-fancybox data-src="./images/9634916_1920 3.png">
+                            <img src="/images/9634916_1920 3.png" alt="3"><a href="#"></a></img>
                         </div>
                     </div>
-                    <div class="works-gallary__card">
-                        <div class="works-gallery__picture">
-                            <img src="/images/9634916_1920 4.png" alt="1"><a href="#"></a></img>
+                    <div class="works-gallary__card responsive">
+                        <div class="works-gallery__picture"  data-fancybox data-src="./images/9634916_1920 4.png">
+                            <img src="/images/9634916_1920 4.png" alt="4"><a href="#"></a></img>
                         </div>
                     </div>
                 </div>
@@ -394,6 +410,14 @@
 
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/navigation-hamburger.js"></script>
+    <script src="js/prices.js"></script>
+    <script src="js/appointment-form.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/works-gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     
 </body>
 </html>
