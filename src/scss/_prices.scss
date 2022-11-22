@@ -42,6 +42,7 @@
         justify-content: space-between;
         gap: 40px;
         display: none;
+        margin-bottom: 100px;
 
         @include IsTablet {
             flex-direction: column;
