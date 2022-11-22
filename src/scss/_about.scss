@@ -83,16 +83,7 @@
       height: 100%;
       object-fit: cover;
       display: block;
-
-      @include IsTablet {
-        min-width: 350px;
-        height: 220px;
-    }
-
-    @include IsMobile {
-        min-width: 300px;
-        height: 200px;
-    }
+      
     }
     }
 }

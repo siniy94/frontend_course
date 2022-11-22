@@ -1,7 +1,7 @@
 $(window).on('load', function() {
     console.log('gallery');
 
-    $('.responsive').slick({
+    $('.works-gallery').slick({
         dots: true,
         infinite: true,
         speed: 300,
