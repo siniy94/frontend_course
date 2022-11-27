@@ -21,9 +21,13 @@
         cursor: pointer;
         position: relative;
         transform: scale(1);
+        transition: 0.3s scale;
 
         &:hover {
-            scale: 1.1;
+            transform: scale(1.1);
+            
+
+
         }
 
         & img {
@@ -33,6 +37,8 @@
             object-position: center;
             display: block;
             border-radius: 8px;
+
+
 
         }
 

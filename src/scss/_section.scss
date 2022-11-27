@@ -18,6 +18,12 @@
       font-weight: 700;
       font-size: 48px;
       margin: 0;
+      
+        
+      @include IsTablet {
+        display: flex;
+        justify-content: center;
+      }
     
       }
       
